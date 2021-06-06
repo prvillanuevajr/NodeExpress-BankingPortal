@@ -1,0 +1,13 @@
+<%- include('header'); %>
+<h1>Profile</h1>
+<div>
+    <% for (let [i, detail] of Object.entries(user)) { %>
+    <p><%= detail %></p>
+    <% } %>
+</div>
+
+<br>
+
+<a href="/">Back to Accounts Summary</a>
+
+<%- include('footer'); %>
