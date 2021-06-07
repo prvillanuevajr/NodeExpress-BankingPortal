@@ -24,7 +24,7 @@ router.post('/payment', async (req, res) => {
     accounts.credit.balance -= parseInt(req.body.amount);
     accounts.credit.available += parseInt(req.body.amount);
 
-    writeJSON()
+    writeJSON();
 
     res.render('payment', {message: "Payment Successful", account: accounts.credit})
 })
